@@ -1,0 +1,37 @@
+Client : Dr. Michael Oudshoorn
+
+Team members and their key roles and responsibilities :
+
+S.No.     Names                                  Roles
+
+1              sravya kandepu   -           a. Primary contact 
+
+                                                         b.Communications and documentation management
+
+2              nitheesha Kotagiri  -         Quality and testing management
+
+3              nikhil vemula     -              Data management
+
+4              harika malempati -           Issues management
+
+5              sanket selokar -               Requirements management
+
+6              saikiran gandam -            Client management
+
+Responsibilities:
+
+Nitheesha Responsibilities:  I am taking the responsibility to maintaining quality throughout the software developing life cycle to deliver effective output. To achieve the qualitative deliverables testing place an important role. I will take the responsibilities to test project in each module.
+
+Sravya Responsibilities –  I am going to act as a primary contact with client. I will represent the whole team and communicates with client regarding project requirements, progression, changes and completion.
+
+I am also taking the responsibility of communication and documentation management and it includes updating all changes and tracking project progression in different versions. 
+
+Harika responsibilities : I would be responsible to track all the issues in the project duration which may relate to internal staff or may be technical side and solve them upfront in order make the project go smooth.
+
+Sanketh responsibilities: I would gather requirements from client and handle the changes in requirements as per the progress of project. My task would be analyzing, tracking and prioritizing the requirements.
+
+Nikhil responsibilities: I will take care of the collecting, storing and managing data in database and connecting data with front end system to update data which is entered by client. I would be responsible for managing data for our project. Including database connectivity, database designing, data mining etc.
+
+Sai Kiran responsibilities: I take the responsibility of meeting, getting requirements from client and also giving updates to the client.
+
+
