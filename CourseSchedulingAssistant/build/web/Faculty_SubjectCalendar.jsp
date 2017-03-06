@@ -3,9 +3,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Home</title>
+  <title>Faculty Course</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
   </head>
 <body>
