@@ -8,6 +8,7 @@ out.println("username:"+username);
 out.println("password:"+password);
 try 
 {
+    /* database connectivity*/
 	Statement statement = null;
   	ResultSet rs = null;
   	String connectionURL = "jdbc:mysql://localhost:3306/facultywebsite";
