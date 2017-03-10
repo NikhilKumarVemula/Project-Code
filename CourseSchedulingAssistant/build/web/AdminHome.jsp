@@ -2,11 +2,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title> Course Scheduling Home</title>
+  <title>Home</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="shortcut icon" href="favicon.png" />
-
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script></head>
   <script type="text/javascript">
   function validateForm() {
@@ -17,11 +15,11 @@
 	        alert("FirstName must be filled out");
 	        return false;
 	    }
-	    else if (x1 == "") {
+	    else if (x1 === "") {
 	        alert("LastName must be filled out");
 	        return false;
 	    }
-	    else if (x2 == "") {
+	    else if (x2 === "") {
 	        alert("Email must be filled out");
 	        return false;
 	    }
@@ -140,7 +138,6 @@ document.getElementById("defaultOpen").click();
   	Statement st = connection.createStatement();
   	String QueryString = "Select FacultyName from faculty";
   	rs = st.executeQuery(QueryString);
-  	//out.println("queried successfully!");
   	while(rs.next())
   	{
 	  %>
