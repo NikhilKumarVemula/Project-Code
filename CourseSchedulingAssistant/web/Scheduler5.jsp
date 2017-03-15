@@ -5,6 +5,7 @@
   <title>Home</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
   </head>
 <body>
@@ -18,6 +19,7 @@
   </div>
 </div>
 <%
+    // session for logined user
 	String user = session.getAttribute("username").toString();
  session.setAttribute("username",user);
  %>
@@ -34,6 +36,7 @@
 <form name=schedule action="Scheduler6.jsp" method=POST>
 <input type=hidden name=user value=<%=session.getAttribute("username").toString() %>>
 <%
+    // getting data from scheduler 1,2,3 and 4 pages
 	String campus = request.getParameter("campus");
 	String dept = request.getParameter("dept");
 	String course = request.getParameter("course");

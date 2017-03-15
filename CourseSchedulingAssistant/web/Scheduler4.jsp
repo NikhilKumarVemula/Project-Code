@@ -2,9 +2,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Home</title>
+  <title>Course Scheduling Assistant</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
   </head>
 <body>
@@ -17,6 +18,7 @@
     <a href="LoginPage.html">Logout</a>
   </div>
 </div><%
+    // session for admin
 	String user = session.getAttribute("username").toString();
  session.setAttribute("username",user);
  %>
@@ -33,6 +35,7 @@
 <form name=schedule action="Scheduler5.jsp" method=POST>
 <input type=hidden name=user value=<%=session.getAttribute("username").toString() %>>
 <%
+    // getting data from scheduler 1,2 and 3 pages 
 	String campus = request.getParameter("campus");
 	String dept = request.getParameter("dept");
 	String course = request.getParameter("course");
@@ -46,6 +49,8 @@
 	 <%
 	 try
 	  {
+// connecting to database              
+// selecting faculty from database
 	  	Statement statement = null;
 	    ResultSet rs = null;
 	    String connectionURL = "jdbc:mysql://localhost:3306/facultywebsite";
@@ -73,7 +78,7 @@
 	  	}
 
 	    
-	  		connection.close();
+	  		connection.close(); // closing database connection
 	  		}
 	 		catch(Exception e){}
 		  %>

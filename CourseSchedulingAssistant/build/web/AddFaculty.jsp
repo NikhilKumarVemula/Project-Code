@@ -4,11 +4,13 @@
  <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Add Faculty</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+          <link rel="shortcut icon" href="favicon.png" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
         </head>
 <script type="text/javascript">
+    //validations for adding faculty
                 function validateForm() {
 	    var x = document.forms["add"]["fname"].value;
 	    var x1 = document.forms["add"]["lname"].value;
@@ -66,12 +68,13 @@ document.getElementById("defaultOpen").click();
   <%
   try
   {
+      // connecting to database to retrieve department data
   	Statement statement = null;
     ResultSet rs = null;
     String connectionURL = "jdbc:mysql://localhost:3306/facultywebsite";
     Connection connection = null; 
   	Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-  	connection = DriverManager.getConnection(connectionURL, "root", "ROOT");
+  	connection = DriverManager.getConnection(connectionURL, "root", "root");
   	Statement st = connection.createStatement();
   	String QueryString = "Select Name from department";
   	rs = st.executeQuery(QueryString);
@@ -94,12 +97,13 @@ document.getElementById("defaultOpen").click();
   <%
   try
   {
+      // conencting database for subject
   	Statement statement = null;
     ResultSet rs = null;
     String connectionURL = "jdbc:mysql://localhost:3306/facultywebsite";
     Connection connection = null; 
   	Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-  	connection = DriverManager.getConnection(connectionURL, "root", "ROOT");
+  	connection = DriverManager.getConnection(connectionURL, "root", "root");
   	Statement st = connection.createStatement();
   	String QueryString = "Select Name from subject";
   	rs = st.executeQuery(QueryString);
@@ -122,12 +126,13 @@ document.getElementById("defaultOpen").click();
   <%
   try
   {
+      // connecting to datbase for location like campus A, campus B
   	Statement statement = null;
     ResultSet rs = null;
     String connectionURL = "jdbc:mysql://localhost:3306/facultywebsite";
     Connection connection = null; 
   	Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-  	connection = DriverManager.getConnection(connectionURL, "root", "ROOT");
+  	connection = DriverManager.getConnection(connectionURL, "root", "root");
   	Statement st = connection.createStatement();
   	String QueryString = "Select LocationName from location";
   	rs = st.executeQuery(QueryString);
@@ -150,12 +155,13 @@ document.getElementById("defaultOpen").click();
   <%
   try
   {
-  	Statement statement = null;
+  	// connecting to database for selecting job-type 
+      Statement statement = null;
     ResultSet rs = null;
     String connectionURL = "jdbc:mysql://localhost:3306/facultywebsite";
     Connection connection = null; 
   	Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-  	connection = DriverManager.getConnection(connectionURL, "root", "ROOT");
+  	connection = DriverManager.getConnection(connectionURL, "root", "root");
   	Statement st = connection.createStatement();
   	String QueryString = "Select DISTINCT Type from faculty";
   	rs = st.executeQuery(QueryString);

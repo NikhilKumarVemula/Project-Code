@@ -5,9 +5,11 @@
   <title>Home</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script></head>
   <script type="text/javascript">
-  function validateForm() {
+  // function for validating Add faculty text fields
+    function validateForm() {
 	    var x = document.forms["add"]["fname"].value;
 	    var x1 = document.forms["add"]["lname"].value;
 	    var x2 = document.forms["add"]["email"].value;
@@ -68,6 +70,7 @@ document.getElementById("defaultOpen").click();
 %>
  <h3> Hi <%=user %> !</h3>
  <%
+     // session for user
  session.setAttribute("username",user);
  %>
     <div id="site_content">

@@ -5,6 +5,7 @@
   <title>Home</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
   </head>
 <body>
@@ -18,6 +19,7 @@
   </div>
 </div>
 <%
+    // session for logined user
 	String user = session.getAttribute("username").toString();
  session.setAttribute("username",user);
  %>
@@ -33,7 +35,8 @@
 <form name=schedule action="Scheduler7.jsp" method=POST>
  <input type=hidden name=user value=<%=session.getAttribute("username").toString() %>>
 <%
-	String campus = request.getParameter("campus");
+// getting data from scheduler pages	
+    String campus = request.getParameter("campus");
 	String dept = request.getParameter("dept");
 	String course = request.getParameter("course");
 	String faculty = request.getParameter("faculty");
@@ -48,7 +51,9 @@
 int chrs = 0;
  try
  {
- 	Statement statement = null;
+ 	// by entering number of days calendar will be displayed to shcedule timetable for faculty
+     // connecting to database and selecting credithours from database
+     Statement statement = null;
    ResultSet rs = null;
    String connectionURL = "jdbc:mysql://localhost:3306/facultywebsite";
    Connection connection = null; 
@@ -66,6 +71,7 @@ int chrs = 0;
  catch(Exception e){}
  //int hrsToteach = 0;
  //hrsToteach=(chrs)/noOfdays;
+ // creating a 2-dimmensional array for storing timetable data 
   String[][] timetable={{"","","","",""},{"","","","",""},{"","","","",""},{"","","","",""},{"","","","",""},{"","","","",""},{"","","","",""},{"","","","",""},{"","","","",""},{"","","","",""}}; 
 
   try
@@ -83,6 +89,7 @@ int chrs = 0;
   	//out.println("queried successfully!");
   	if(rs!=null)
   	{
+            // loop for storing timetable by clicking on the slots
   		while(rs.next())
   	  	{
   			if(rs.getString(5).equals("Monday"))
@@ -214,6 +221,7 @@ int chrs = 0;
       </tr>
   </thead>
   <%
+      // if user enters number of days as 3, dividing time slots into 50 min classes
   if(noOfdays==3)
   {
   %>
@@ -1032,6 +1040,7 @@ int chrs = 0;
 		 			    </tbody>
  <%
   }
+// if user enters number of days as 2 then dividing classes into 75min classes
   else if(noOfdays==2)
   {
   %>
