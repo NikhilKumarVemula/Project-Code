@@ -16,11 +16,12 @@ try
     st.execute(query);
     out.println("<script type=\"text/javascript\">");
 	out.println("alert('Faculty Removed!! ');");
-	 out.println("location='index.html';");
+	 out.println("location='AdminHome.jsp';");
 	 out.println("</script>");
 }catch(Exception e)
 {
 	e.printStackTrace();
+        	 out.println("location='RemoveFaculty.jsp';");
 	System.out.println("Could not delete!");
 }
 %>

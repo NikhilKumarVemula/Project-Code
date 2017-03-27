@@ -159,7 +159,7 @@ document.getElementById("defaultOpen").click();
 </div>
 <div id="add" class="tabcontent">
 <h3>Add Faculty!</h3>
-<form name=add action="AddFaculty.jsp" method=POST onsubmit="return validateForm()">
+<form name=add action="AddFac.jsp" method=POST onsubmit="return validateForm()">
 <input type=hidden name=user value=<%=session.getAttribute("username").toString() %>>
 <p>Firstname : <input type=text name=fname></p>
 <p>Lastname : <input type=text name=lname></p>
