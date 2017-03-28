@@ -79,9 +79,12 @@ try
 	{
 		out.println("<script type=\"text/javascript\">");
 	      out.println("alert('Faculty added successfully!! ');");
-	    out.println("location='AdminHome.jsp';");
+	    out.println("location='AddFac.jsp';");
 	    out.println("</script>");
-	response.sendRedirect("AddFaculty.jsp");
+//out.println("alert('Faculty added successfully');");
+session.setAttribute("message", "added");
+	 response.sendRedirect("AdminHome.jsp");
+//response.sendRedirect("AddFaculty.jsp");
 	}
 	else
 	{
@@ -89,6 +92,7 @@ try
  	      out.println("alert('Could not add faculty!! ');");
  	    out.println("location='AddFaculty.jsp';");
  	    out.println("</script>");
+         //   response.sendRedirect("AdminHome.jsp");
 	 response.sendRedirect("AddFaculty.jsp");
 	}
 }

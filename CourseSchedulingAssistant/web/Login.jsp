@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %> 
 <%
-out.println("hello");
+//out.println("hello");
+
 String username = request.getParameter("uname");
 String password = request.getParameter("pwd");
-out.println("username:"+username);
-out.println("password:"+password);
+//out.println("username:"+username);
+//out.println("password:"+password);
 try 
 {
     /* database connectivity*/
@@ -17,7 +18,8 @@ try
 	connection = DriverManager.getConnection(connectionURL, "root", "root");
 	Statement st = connection.createStatement();
 	String QueryString = "Select Role from accountant where Username='"+username+"' and Password='"+password+"'";
-	rs = st.executeQuery(QueryString);
+	
+        rs = st.executeQuery(QueryString);
 	if(rs.next())
 	{
 		session.setAttribute("username", username);
@@ -32,9 +34,12 @@ try
 	}
 	else
 	{
-		out.println("<script type=\"text/javascript\">");
-	    out.println("alert('Could not find user! Check your credentials!');");
+            
+            out.println("<script type=\"text/javascript\">");
+            //out.println("<h3>Sorry, you are INVALID</h3>"); 
+	    out.println("alert('Wrong Username or Password! please Enter Correct Credentials');");
 	    out.println("location='LoginPage.html';");
+            out.println("alert('Wrong Username or Password!');");
 	    out.println("</script>");
 	}
 }

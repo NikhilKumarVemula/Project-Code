@@ -67,6 +67,14 @@ document.getElementById("defaultOpen").click();
 </div>
 <%
 	String user = session.getAttribute("username").toString();
+        try{
+        if(session.getAttribute("message").equals("added")){
+       out.println("<script type=\"text/javascript\">");
+	      out.println("alert('Faculty added successfully!! ');");
+	    //out.println("location='AdminHome.jsp';");
+	    out.println("</script>");
+        }
+        }catch(NullPointerException e){}
 %>
  <h3> Hi <%=user %> !</h3>
  <%
@@ -88,7 +96,6 @@ document.getElementById("defaultOpen").click();
   <p>To schedule timetable, <a href="Scheduler1.jsp">Click here !!</a></p>
 </div>
 <div id="course" class="tabcontent">
-
 <form method=POST name=selectCourse action="SubjectCalendar.jsp">
 <input type=hidden name=user value=<%=session.getAttribute("username").toString() %>>
   <h3>Course : <select id=course name=course>
@@ -243,7 +250,7 @@ document.getElementById("defaultOpen").click();
   	}
   }
   catch(Exception e)
-  {
+  {       
 	  out.println("Unable to connect to database!");
   }
   %>  
@@ -276,8 +283,8 @@ document.getElementById("defaultOpen").click();
   }
   %>  
   </select></p>
-  <p>CreditHours : <input type=text name=chrs  min="1" max="12"></p>
-  <br><input type=submit name=add value=" Add "><br><br>
+  <p>Credit Hours : <input type=text name=chrs  min="1" max="12"></p>
+  <br><input type=submit name=add value=" Add Faculty "><br><br>
 </form>
 </div>
 <div id="remove" class="tabcontent">

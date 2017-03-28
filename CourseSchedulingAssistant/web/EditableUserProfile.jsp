@@ -13,7 +13,7 @@
 	    var x1 = document.forms["FacultyDetails"]["email"].value;
 	    var x2 = document.forms["FacultyDetails"]["phone"].value;
 	    var x3 = document.forms["FacultyDetails"]["oadd"].value;
-	    var x4= document.forms["FacultyDetails"]["ohrs"].value;
+	    var x4 = document.forms["FacultyDetails"]["ohrs"].value;
 	    var x5 = document.forms["FacultyDetails"]["chrs"].value;
 	   if (x == "") {
 	        alert("Name must be filled out");
