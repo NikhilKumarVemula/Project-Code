@@ -244,12 +244,14 @@
 		  	else
 		  		time_data+="\""+data[0]+"\"";
 	  	}
-	  	String QueryString = "SELECT DISTINCT r.RoomNumber from room r,location l,building b, timetable t where b.LocationId=l.LocationId and b.BuildingId=r.BuildingId	and r.RoomNumber not in(select RoomNumber from timetable where TimeDuration in '"+time_data+")') and l.LocationName='"+campus+"'";
+                String QueryString = "Select RoomNumber from room";
+	  	// String QueryString = "SELECT DISTINCT r.RoomNumber from room r,location l,building b, timetable t where b.LocationId=l.LocationId and b.BuildingId=r.BuildingId	and r.RoomNumber not in(select RoomNumber from timetable where TimeDuration in '"+time_data+")') and l.LocationName='"+campus+"'";
 	  	rs = st.executeQuery(QueryString);
+                out.println(rs);
 	  	while(rs.next())
 	  	{
 		  %>
-		  <option><%=rs.getString(1) %></option>
+		  <option><% rs.getInt("RoomNumber"); %></option>
 		  <%
 		  	}
 	  		connection.close();

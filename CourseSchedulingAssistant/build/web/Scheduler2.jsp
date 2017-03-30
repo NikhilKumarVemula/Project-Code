@@ -48,7 +48,8 @@
 	  	Class.forName("com.mysql.jdbc.Driver").newInstance(); 
 	  	connection = DriverManager.getConnection(connectionURL, "root", "root");
 	  	Statement st = connection.createStatement();
-	  	String QueryString = "Select d.Name from department d,location l where l.LocationId=d.LocationId and l.LocationName='"+campus+"'";
+                String QueryString = "Select  distinct DeptName from faculty";
+	  	// String QueryString = "Select d.Name from department d,location l where l.LocationId=d.LocationId and l.LocationName='"+campus+"'";
 	  	rs = st.executeQuery(QueryString);
 	  	while(rs.next())
 	  	{
