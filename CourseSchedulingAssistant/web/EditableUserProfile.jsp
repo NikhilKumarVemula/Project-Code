@@ -1,3 +1,5 @@
+<!--This is a profile page for the faculty who login. It contains personal details of the faculty like emailid 
+number and job type-->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
