@@ -1,3 +1,4 @@
+<!-- This schedular page contains the validation for the collision of class for the same faculty at the same time -->
 <%@ page import="java.sql.*" %>
 <%@ page import="java.io.*" %> 
 <%@ page import="java.util.Properties" %> 
