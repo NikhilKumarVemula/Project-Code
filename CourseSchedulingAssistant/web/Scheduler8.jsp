@@ -1,3 +1,4 @@
+<!-- This is schedular page which displays the rooms based on the time slot selected -->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
