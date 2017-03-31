@@ -1,3 +1,5 @@
+<!-- This is faculty home page. It contains home , course and faculty tabs. On click of these tabs, it is directed
+to specific pages-->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
