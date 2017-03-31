@@ -1,4 +1,4 @@
-<!-- This page is used to login. It facilitates to enter username and password-->
+<!-- This page validates the username and password entered in the loginpage.html page-->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %> 
 <%
