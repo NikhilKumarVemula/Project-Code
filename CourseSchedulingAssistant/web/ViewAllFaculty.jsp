@@ -1,4 +1,4 @@
-
+<!--This page contains the logic to display all the faculty schedule  -->
 <%@ page import="java.util.Arrays" %>
 <!DOCTYPE HTML>
 <html>
