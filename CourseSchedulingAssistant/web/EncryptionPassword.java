@@ -1,4 +1,4 @@
-
+//this page is used to encrypt the password.
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import javax.crypto.Cipher;
