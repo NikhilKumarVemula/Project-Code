@@ -1,3 +1,5 @@
+<!-- This is a schedular page which queries the database and populates the campus data in the drop down
+on click of show button directed to shechuler2.jsp-->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
