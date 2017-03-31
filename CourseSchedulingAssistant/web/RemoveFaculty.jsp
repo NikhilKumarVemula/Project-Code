@@ -1,3 +1,4 @@
+<!-- This page displays the user interface for the removal faculty. It queries the database for the data to populate in the UI fields -->
 <%@ page import="java.sql.*" %>
 
 <!DOCTYPE html>
