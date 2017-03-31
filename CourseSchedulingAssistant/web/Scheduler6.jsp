@@ -1,3 +1,4 @@
+<!-- This contains logic to display the table grid in calendar format based on the number of days entered -->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
