@@ -1,3 +1,4 @@
+<!--This page contains the logic of displaying the details of faculties based on course selected  -->
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.Arrays" %>
 <!DOCTYPE HTML>
