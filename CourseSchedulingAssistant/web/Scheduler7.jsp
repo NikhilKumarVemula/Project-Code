@@ -1,3 +1,4 @@
+<!--This is a schedular page which contains the logic on the time slot selected to be pushed into the database -->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
