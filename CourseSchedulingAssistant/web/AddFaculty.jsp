@@ -1,3 +1,4 @@
+<!--This page is dedicated for adding faculty. It queries the databases and populates the data into required UI fields -->
 <%@ page import="java.sql.*" %>
 
 <!DOCTYPE html>
