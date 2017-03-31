@@ -1,3 +1,4 @@
+<!-- This page contains the login based on the credintials given it is directed to admin or faculty home page -->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
