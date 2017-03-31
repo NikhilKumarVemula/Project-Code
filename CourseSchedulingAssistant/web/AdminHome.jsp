@@ -1,3 +1,5 @@
+<!--This is AdminHome page. It contains home,faculty,course,AddFaculty and RemoveFaculty tabs. 
+On click of those tabs it is directed to specific pages.-->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
