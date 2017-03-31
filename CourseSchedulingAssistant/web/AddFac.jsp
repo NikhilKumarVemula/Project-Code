@@ -1,3 +1,5 @@
+<!--This page is dedicated for adding faculty. 
+It takes the below string values and stores it into database on click of add button -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
