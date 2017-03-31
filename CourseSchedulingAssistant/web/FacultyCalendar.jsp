@@ -1,3 +1,4 @@
+<!-- This page displays the faculty details in a calendar format to make the display of the schedule of the faculty easy -->
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.Arrays" %>
 <!DOCTYPE HTML>
