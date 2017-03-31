@@ -1,3 +1,5 @@
+<!--This page contains the logic for the changing the password. When the admin/faculty forgots the password. There is a flexibility
+to change the password.-->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
