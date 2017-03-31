@@ -1,3 +1,5 @@
+<!-- This is a schedular page based on number of days selected the calendar format is display with time slot on x-axies and days 
+from  monday to friday on y-axis-->
 <%@ page import="java.sql.*" %>
 <!DOCTYPE HTML>
 <html>
